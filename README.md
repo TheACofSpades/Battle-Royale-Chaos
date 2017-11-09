@@ -23,4 +23,4 @@ Unique selling points -
 Basically combining all of these games into a dumbed down battle royale
 
 What’s enjoyable/positive about this game? - 
-Tts just a good way to let off steam and bash your friends up...i mean who wouldn't wanna do that.
+Its just a good way to let off steam and bash your friends up...i mean who wouldn't wanna do that.
