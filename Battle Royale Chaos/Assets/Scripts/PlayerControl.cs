@@ -12,12 +12,14 @@ public class PlayerControl : MonoBehaviour
     public float explosionForce = 10f;
     public float explosionRadius = 10f;
 
+    public GameObject fists;
     public GameObject rotationPivot;
 
     Vector3 move;
     bool doJump;
 
     Rigidbody rb;
+    Animator anim;
 
     public Rigidbody otherPlayer;
 
@@ -25,6 +27,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +54,11 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             otherPlayer.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            anim.SetTrigger("DoubleJab");
         }
     }
 
